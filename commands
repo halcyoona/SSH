@@ -1,0 +1,31 @@
+ssh robert@192.168.0.123 "ls" // only ls into other machine and then return to own machine
+
+
+ssh robert@192.168.0.123 //  gives complete hold to run commands only
+
+
+
+
+scp /tmp/my_file robert@192.168.0.123:/mnt/my_file #  From your computer to 192.168.0.123
+
+scp robert@192.168.0.123:/mnt/my_file /tmp/my_file #  From 192.168.0.123 to your computer
+
+
+
+
+git clone my-server:~/my_git_repo.git // to connect to your github
+
+
+
+A:~$ ssh -Y username@192.168.1.17 // gives complete hold to others machine to run application or whatever 
+
+
+/etc/ssh/sshd_config
+
+$ sudo service ssh stop // to stop ssh
+
+$ sudo service ssh status // to check status 
+
+$ sudo service ssh restart // to restart ssh
+
+$ ssh-keygen // to generate public-private key pair
